@@ -1,3 +1,5 @@
+package xpath;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,13 +18,13 @@ public class LoginDemo {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
-        WebElement txtUsername = driver.findElement(By.name("username"));
+        WebElement txtUsername = driver.findElement(By.xpath("//input[@name='username']"));
         txtUsername.sendKeys("Admin");
 
-        WebElement txtPassword = driver.findElement(By.name("password"));
+        WebElement txtPassword = driver.findElement(By.xpath("//input[@name='password']"));
         txtPassword.sendKeys("admin123");
 
-        WebElement btnLogin = driver.findElement(By.tagName("button"));
+        WebElement btnLogin = driver.findElement(By.xpath("//button[@type='submit']"));
         btnLogin.click();
 
 
