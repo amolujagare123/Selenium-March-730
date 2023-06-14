@@ -60,18 +60,21 @@ public class LoginDemo2 {
         btnLogin.click();
 
 
+
+
+
         String expected = "Wrong Username or Password";
-       /* String actual = "";
+        String actual = "";
         try {
-            actual = driver.findElement(By.xpath("")).getText();
+            actual = driver.findElement(By.xpath("//div[@class='error-box round']")).getText();
         } catch (Exception e) {
 
         }
-*/
-       /* System.out.println("expected=" + expected);
+
+        System.out.println("expected=" + expected);
         System.out.println("actual=" + actual);
 
-        Assert.assertEquals(actual, expected, "This is not a login page");*/
+        Assert.assertEquals(actual, expected, "This is not a login page");
 
     }
 }

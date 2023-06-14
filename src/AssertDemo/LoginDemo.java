@@ -34,7 +34,7 @@ public class LoginDemo {
         String expected = "POSNIC - Dashboard";
         String actual = driver.getTitle();
 
-                System.out.println("expected="+expected);
+        System.out.println("expected="+expected);
         System.out.println("actual="+actual);
 
         Assert.assertEquals(actual,expected,"This is not a login page");
