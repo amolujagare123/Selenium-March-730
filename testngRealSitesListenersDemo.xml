@@ -1,0 +1,25 @@
+<suite name="All Sites">
+
+    <!--<listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+-->
+
+    <listeners>
+        <listener class-name="ExtentReportsDemo.MyListeners.ExtentReportListeners"/>
+    </listeners>
+
+
+    <test name="Study">
+        <classes>
+            <class name="TestNGDemo.Demo2.JobsSites"/>
+            <class name="TestNGDemo.Demo2.TutorialsSites"/>
+        </classes>
+    </test>
+
+    <test name="Social">
+        <classes>
+            <class name="TestNGDemo.Demo2.SocialSites"/>
+        </classes>
+    </test>
+</suite>
